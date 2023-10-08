@@ -42,4 +42,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    protected static function boot()
+    {
+        parent::boot();
+        static::created(function ($user){
+        $user->profile()->create();
+        });
+    }
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
+    public function children()
+    {
+        return $this->hasMany(Children::class)->latest();;
+    }
 }

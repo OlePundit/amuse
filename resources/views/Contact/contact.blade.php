@@ -8,19 +8,21 @@
                 Get in Touch with us 👋
             </h2>
             <h3>Fill up the Form  and ou team will get back to within 24 hrs</h3>
-            <form>
+            <form action="/store-contact" method="POST">
+                @csrf
                 <div class="">
-                    <input type="text" name="first-name" class="firstname">
+                    <input type="text" name="first-name" class="firstname" placeholder="first name">
                 </div>
                 <div class="">
-                    <input type="text" name="last-name" class="lastname">
+                    <input type="text" name="last-name" class="lastname" placeholder="last name">
                 </div>
                 <div class="">
-                    <input type="email" name="email" class="email">
+                    <input type="email" name="email" class="email" placeholder="email">
                 </div>
                 <div class="">
-                    <textarea name="message" class="message"></textarea>
+                    <textarea name="message" class="message" placeholder="message"></textarea>
                 </div>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
