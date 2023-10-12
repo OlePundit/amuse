@@ -5,24 +5,34 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="bg-video">
-                <video autoplay muted loop width="100%">
+                <video autoplay muted loop width="90%">
                     <source src="/storage/bg-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <div class="gradient">
+
+                </div>
                 <div class="video-caption">
                 <p>Fun and enriching opportunities for kids</p>
-            </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="section-info">
+    <div class="section-info ">
         <div class="row info">
-            <div class="col-lg-6 join-us">
+               
+
+            <div class="col-lg-6 col-xl-6 col-sm-12 join-us">
+            <svg class="rectangle9" xmlns="http://www.w3.org/2000/svg" width="316" height="314" viewBox="0 0 316 314" fill="none">
+                <path opacity="0.8" d="M1.21634 122.816C8.09489 56.9774 94.5518 -3.87712 162.533 0.973435C230.514 5.824 322.965 145.082 314.523 180.703C306.081 216.324 182.174 342.294 126.982 308.041C71.7912 273.788 -5.66222 188.654 1.21634 122.816Z" fill="#CD2E94"/>
+            </svg>
+                  
+            <img src='/storage/vector3.png' class="vector3">
                 <h3>Join us for exceptional outdoor experiences <br> <span>that inspire, empower and shape young minds.</span></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare</p>
                 <a href="" style="text-decoration:none">Book now</a>
             </div>
-            <div class="col-lg-6 grid">
+            <div class="col-lg-6 col-xl-6 col-sm-12 grid">
                 <div class="frame-3">
                     <div class="pic-wrap">
                         <img src="/storage/foot.png">
@@ -73,6 +83,7 @@
 
         </div>
         <div class="wrap">
+            <img src="/storage/vector5.png" class="vector5">
             <div class="review-wrap">
                 <div class="review-wrap-card">
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -138,79 +149,45 @@
         <div class="space-headings">
             <h2><span> Upcoming</span> Camps</h2>
         </div>
-        <div class="wrap">
+        <div class="wrap justify-content-center align-items-center">
+            <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="435" height="396" viewBox="0 0 435 396" fill="none">
+            <path opacity="0.8" d="M250.5 395L1 229.5L97 1L433.5 227L250.5 395Z" fill="#FFD133" stroke="#FFD133"/>
+            </svg>            
+            @foreach($upcomings as $upcoming)
             <div class="event-card">
-                <img src="/storage/tamasha.png">
+                <img src="/storage/{{$upcoming->image}}">
                 <div class="event-item">
-                    <h5>Tamasha Bustani</h5>
-                    <h6>Saturday & Sunday</h6>
+                    <h5>{{$upcoming->title}}</h5>
+                    <h6>{{$upcoming->caption}}</h6>
                 </div>
             </div>
-            <div class="event-card">
-                <img src="/storage/summer.png">
-                <div class="event-item">
-                    <h5>Tamasha Bustani</h5>
-                    <h6>Saturday & Sunday</h6>
-                </div>
-            </div>
-            <div class="event-card">
-                <img src="/storage/october.png">
-                <div class="event-item">
-                    <h5>Tamasha Bustani</h5>
-                    <h6>Saturday & Sunday</h6>
-                </div>
-            </div>
-            
+            @endforeach                     
         </div>
         <div class="dot-group">
             <div class="dot-indicator"></div>
         </div>
     </div>
-    <div class="section-pictorial">
+    <div class="section-pictorial justify-content-center align-items-center">
         <div class="space-headings">
             <h2>Play is Powerful</h2>
         </div>
-        <div class="wrap">
-            <img src="/storage/pictorial.png" style="width: 389px;
-            height: 362px;
-            flex-shrink: 0;
-            border-radius: var(--border-radius-3, 24px);
-            margin-right:32px;
-            ">
-            <img src="/storage/pictorial1.png" style="width: 810px;
-            height: 362px;
-            flex-shrink: 0;
-            border-radius: var(--border-radius-3, 24px);
-            ">
-            <div class="d-flex">
-                <img src="/storage/pictorial1.png" style="width: 810px;
-                height: 362px;
-                flex-shrink: 0;
-                border-radius: var(--border-radius-3, 24px);
-                margin-top:32px;
-                ">
-                <img src="/storage/pictorial2.png" style="width: 389px;
-                height: 720px;
-                flex-shrink: 0;
-                border-radius: var(--border-radius-3, 24px);
-                margin-left:32px;
-                margin-top:32px;
-                ">
-                
-            </div>
-            <img src="/storage/pictorial2.png" style="width: 389px;
-                height: 720px;
-                flex-shrink: 0;
-                border-radius: var(--border-radius-3, 24px);
-                margin-left:32px;
-                margin-top:32px;
-                ">
-                   <img src="/storage/pictorial.png" style="width: 389px;
-            height: 362px;
-            flex-shrink: 0;
-            border-radius: var(--border-radius-3, 24px);
-            margin-right:32px;
-            ">
+        <div class="grid-container">
+            <img src="/storage/pictorial.png" alt="Image 1" class="image-1">
+            <img src="/storage/pictorial1.png" alt="Image 2" class="image-2">
+            <img src="/storage/pictorial1.png" alt="Image 3" class="image-3">
+            <img src="/storage/pictorial2.png" alt="Image 4" class="image-4">
+            <img src="/storage/pictorial2.png" alt="Image 4" class="image-5">
+            <img src="/storage/pictorial.png" alt="Image 4" class="image-6">
+            <img src="/storage/pictorial1.png" alt="Image 7" class="image-7">
+            <img src="/storage/pictorial1.png" alt="Image 8" class="image-8">
+            <img src="/storage/pictorial.png" alt="Image 9" class="image-9">
+
+
+        </div>
+        <div class="wrap">           
+          
+            
+                   
             
         </div>
 

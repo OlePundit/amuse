@@ -34,121 +34,53 @@
             
         </div>
         <div class="featured-blogs">
+            @foreach($featuredBlogs as $featuredBlog)
             <div class="featured-blog-small">
                <img src="/storage/image.png"> 
                <div class="details">
-                    <h5>You can move the text by dragging and dropping </h5>
-                    <p>Writing UX copies can be a little frustrating and confusing, and sometimes </p>
+                    <h5>{{$featuredBlog->title}} </h5>
+                    <p>{{ Str::limit($featuredBlog->body, $limit = 120, $end = '...') }}</p>
                     <div class="caption">
-                        <h5>By Glenn Omondi</h5>
-                        <h6>Category</h6>
+                        <h5>By {{$featuredBlog->author}}</h5>
+                        <h6>{{$featuredBlog->category}}</h6>
                     </div>
                </div>
             </div>
-            <div class="featured-blog-small1">
-               <img src="/storage/image.png"> 
-               <div class="details">
-                    <h5>You can move the text by dragging and dropping </h5>
-                    <p>Writing UX copies can be a little frustrating and confusing, and sometimes </p>
-                    <div class="caption">
-                        <h5>By Glenn Omondi</h5>
-                        <h6>Category</h6>
-                    </div>
-               </div>
-            </div>
-            <div class="featured-blog-small2">
-               <img src="/storage/image.png"> 
-               <div class="details">
-                    <h5>You can move the text by dragging and dropping </h5>
-                    <p>Writing UX copies can be a little frustrating and confusing, and sometimes </p>
-                    <div class="caption">
-                        <h5>By Glenn Omondi</h5>
-                        <h6>Category</h6>
-                    </div>
-               </div>
-            </div>
+            @endforeach  
         </div>
      </div>
 </div>
-<div class="section-blogs">
+<div class="section-blogs d-flex justify-content-center align-items-center">
     <div class="space-headings">
         <h2>All Blogs</h2>
     </div>
-    <div class="space-headings1">
+    <!--<div class="space-headings1">
         <button class="category1">Category 1</button>
         <button>Category 2</button>
         <button>Category 3</button>
         <button>Category 4</button>
         <button>Category 5</button>
 
-    </div>
-    <div class="grid row">
+    </div>-->
+    <div class="grid d-flex justify-content-center align-items-center">
+        @foreach($blogs as $blog)
+        <a href="/blog/{{$blog->slug}}" style="text-decoration:none;">
         <div class="col-lg-4 blog-card">
             <img src="/storage/blog.png">
             <div class="feature-info">
                 <div class="caption">
-                    <h5>By Glenn Omondi</h5>
-                    <h6>Category</h6>
+                    <h5>{{$blog->author}}</h5>
+                    <h6>{{$blog->category}}</h6>
                 </div>
-                <h5>Lorem ipsum dolor sit amet, sed do eiusmod tempor amet consectetur...</h5>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <h5>{{$blog->title}}</h5>
+                <p>{{ Str::limit($blog->body, $limit = 120, $end = '...') }}</p>
+
             </div>
         </div>
-        <div class="col-lg-4 blog-card">
-            <img src="/storage/blog.png">
-            <div class="feature-info">
-                <div class="caption">
-                    <h5>By Glenn Omondi</h5>
-                    <h6>Category</h6>
-                </div>
-                <h5>Lorem ipsum dolor sit amet, sed do eiusmod tempor amet consectetur...</h5>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 blog-card">
-            <img src="/storage/blog.png">
-            <div class="feature-info">
-                <div class="caption">
-                    <h5>By Glenn Omondi</h5>
-                    <h6>Category</h6>
-                </div>
-                <h5>Lorem ipsum dolor sit amet, sed do eiusmod tempor amet consectetur...</h5>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 blog-card">
-            <img src="/storage/blog.png">
-            <div class="feature-info">
-                <div class="caption">
-                    <h5>By Glenn Omondi</h5>
-                    <h6>Category</h6>
-                </div>
-                <h5>Lorem ipsum dolor sit amet, sed do eiusmod tempor amet consectetur...</h5>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 blog-card">
-            <img src="/storage/blog.png">
-            <div class="feature-info">
-                <div class="caption">
-                    <h5>By Glenn Omondi</h5>
-                    <h6>Category</h6>
-                </div>
-                <h5>Lorem ipsum dolor sit amet, sed do eiusmod tempor amet consectetur...</h5>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-        </div>
-        <div class="col-lg-4 blog-card">
-            <img src="/storage/blog.png">
-            <div class="feature-info">
-                <div class="caption">
-                    <h5>By Glenn Omondi</h5>
-                    <h6>Category</h6>
-                </div>
-                <h5>Lorem ipsum dolor sit amet, sed do eiusmod tempor amet consectetur...</h5>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-        </div>
+        </a>
+        @endforeach    
+        
+        
     </div>
 </div>
 <div class="section-CTA">

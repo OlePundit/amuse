@@ -1,3 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.home-container{
+    display: flex;
+    width: 1440px;
+    padding: var(--spacing-0-rem, 0px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-0-rem, 0px);
+    overflow:hidden;
+}
 footer{
     display: flex;
     padding: var(--section-top-medium, 88px) var(--section-horizontal-main, 104px);
@@ -5,7 +18,7 @@ footer{
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    background: var(--section-mode-bg-1, #222021);
+    background: var(--section-mode-bg-1, #1C260D);
 }
 footer .footer-content{
     display: flex;
@@ -49,10 +62,10 @@ footer .footer-content .CTA{
     gap: var(--section-top-small, 48px);
     align-self: stretch;
     border-radius: var(--border-radius-3, 24px);
-    background: var(--brand-1-opacity-40, rgba(113, 200, 80, 0.40));
+    background: var(--button-mode-primary-bg-1, #71C850);
 }
 footer .footer-content .CTA h5{
-    color: var(--section-mode-font-color-1, #FBFCFA);
+    color: var(--section-mode-font-color-1, #1C260D);
     font-family: Inter;
     font-size: 32px;
     font-style: normal;
@@ -70,21 +83,17 @@ footer .footer-content .CTA form{
 }
 footer .footer-content .contacts{
     display: flex;
-    width: 1232.063px;
+    width: 100%;
     padding: var(--spacing-0-rem, 0px);
     justify-content: space-between;
     align-items: flex-start;
 }
 footer .footer-content .contacts .contact-info{
     display: flex;
+    width: 100%;
     padding: var(--spacing-0-rem, 0px);
-    align-items: flex-start;
-    gap: var(--grid-gap-main, 32px);
     justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    width:100%;
-    padding-right: 0px;
+    align-items: flex-start;
 }
 footer .footer-content .contacts .contact-info .frame-10{
     display: flex;
@@ -126,10 +135,26 @@ footer .footer-content .CTA .newsletter input{
     align-items: center;
     gap: 10px;
     flex: 1 0 0;
+    background:none;
     border-radius: var(--border-radius-4, 99999px);
-    border: 1px solid var(--section-mode-border-color-1, rgba(251, 252, 250, 0.20));
-    background: var(--section-mode-bg-1, #222021);
+    border: 1px solid var(--button-mode-secondary-bg-1-hover, #FBFCFA);
+    color: var(--section-mode-font-color-2, rgba(251, 252, 250, 0.70));
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
 }
+footer .footer-content .CTA .newsletter .form-control::placeholder{
+
+    color: var(--section-mode-font-color-2, rgba(251, 252, 250, 0.70));
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
 footer .footer-content .CTA .newsletter button{
     display: flex;
     padding: var(--spacing-1-rem, 16px) var(--grid-gap-main, 32px);
@@ -137,16 +162,39 @@ footer .footer-content .CTA .newsletter button{
     align-items: center;
     gap: var(--spacing-075-rem, 12px);
     border-radius: var(--border-radius-4, 99999px);
-    border: 2px solid var(--button-mode-primary-bg-1-border, #71C850);
-    background: var(--button-mode-primary-bg-1, #71C850);
+    border: 2px solid var(--button-mode-secondary-bg-1-border-hover, #1C260D);
+    background: var(--button-mode-secondary-bg-1-hover, #1C260D);
+    color: var(--button-mode-secondary-font-color-1-hover, #FBFCFA);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 23.4px */
 }
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
 .bg-video {
     position: relative;
     overflow: hidden;
     padding-bottom: 56.25%;
     background-color: #000;
 }
-
+.gradient{
+    display: flex;
+    height: 384px;
+    width:100%;
+    padding: var(--spacing-0-rem, 211px) var(--spacing-0-rem, 242px) var(--spacing-0-rem, 121px) var(--spacing-0-rem, 243px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-0-rem, 0px);
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FBFCFA 100%);
+}
 .bg-video video {
     position: absolute;
     top: 0;
@@ -165,26 +213,90 @@ footer .footer-content .CTA .newsletter button{
     font-weight: 700;
     line-height: 100%; /* 52px */
     letter-spacing: -1.56px;
-    top: 700px; /* Adjust the top positioning as needed */
-    left: 300px; /* Adjust the left positioning as needed */
+    top: 90%; /* Vertically centered */
+    left: 50%; /* Horizontally centered */
+    transform: translate(-50%, -50%);/* Adjust the left positioning as needed */
     padding: 10px; /* Padding around the caption text */
     font-weight: bold; /* Font weight */
     border-radius: 5px; /* Rounded corners for the caption */
 }
+.section-info .info .rectangle9{
+    width: 271.375px;
+    height: 296.692px;
+    transform: rotate(-34.176deg);
+    position: absolute;
+    right: 100px;
+    top: 130%;
+    fill: var(--brand-2, #CD2E94);
+    opacity: 0.8;
+    z-index: -1;
+    
+}
+.section-info .info .vector3{
+    width: 349px;
+    height: 290px;
+    position: absolute;
+    left: -6%;
+    top: 250%;
+    fill: var(--brand-5, #ED701D);
+    stroke-width: 1px;
+    stroke: var(--brand-5, #ED701D);
+    opacity: 0.8;
+    z-index: -1;
+    
+}
+.section-testimonials .wrap .vector5{
+    width: 349px;
+    height: 290px;
+    transform: rotate(39.633deg);
+    position: absolute;
+    left: -185.001px;
+    top: 2793px;
+    fill: var(--button-mode-primary-bg-1, #71C850);
+    stroke-width: 1px;
+    stroke: var(--button-mode-primary-bg-1-border, #71C850);
+    opacity: 0.8;
+    z-index:-1;
+    
+}
+.section-camps .wrap .vector2{
+    width: 432.5px;
+    height: 394px;
+    position: absolute;
+    right: 50px;
+    top: 3377px;
+    fill: var(--brand-4, #FFD133);
+    stroke-width: 1px;
+    stroke: var(--brand-4, #FFD133);
+    opacity: 0.8;
+    z-index:-1;
+}
 .section-info{
     display: flex;
+    width: 100%; /* You can adjust this width as needed */
+    overflow: hidden;
+
     padding: var(--section-bottom-large, 144px) var(--section-horizontal-main, 104px);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content:center;
     gap: var(--spacing-0-rem, 0px);
-    align-self: stretch;
+
+}
+.svg-container {
+    /* Make the container a flex container to center the SVG horizontally */
+    display: flex;
+    justify-content: center;
 }
 .section-info .info{
     display: flex;
     padding: var(--spacing-0-rem, 0px);
-    align-items: flex-start;
+    justify-content: center;
     gap: var(--grid-gap-main, 32px);
     align-self: stretch;
+    overflow: hidden;
+
+
 }
 
 .section-info .info .join-us{
@@ -639,6 +751,7 @@ footer .footer-content .CTA .newsletter button{
     align-items: flex-start;
     gap: var(--section-top-small, 48px);
     align-self: stretch;
+    overflow:hidden;
 }
 .section-camps .space-headings{
     display: flex;
@@ -673,6 +786,7 @@ footer .footer-content .CTA .newsletter button{
     align-items: flex-start;
     gap: var(--spacing-2-rem, 32px);
     align-self: stretch;
+    
 }
 .section-camps .wrap .event-card{
     display: flex;
@@ -753,8 +867,89 @@ footer .footer-content .CTA .newsletter button{
     line-height: 100%; /* 60px */
     letter-spacing: -1.8px;
 }
-.section-pictorial .wrap{
+.section-pictorial .grid-container{
     height: 1902px;
+    display: grid;
+    grid-template-columns:   389px 389px 389px;
+    grid-template-rows: 362px 362px 362px 362px 362px;
+    gap: 32px; /* Removes the gap between the rows and columns */
+    padding-block: 0;
+}
+.section-pictorial .grid-container .image-1{
+    grid-column: 1;
+    grid-row: 1;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+    margin-right:32px;   
+    width: 389px;
+}
+.section-pictorial .grid-container .image-2{
+    grid-column: 2;
+    grid-row: 1;
+    width: 810px;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+}
+.section-pictorial .grid-container .image-3{
+    grid-column: 1;
+    grid-row: 2;
+    width: 810px;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+    margin-bottom:32px;
+}
+.section-pictorial .grid-container .image-4{
+    grid-column: 3;
+    grid-row: 2;
+    width: 389px;
+    height: 755px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+}
+.section-pictorial .grid-container .image-5{
+    grid-column: 1;
+    grid-row: 3;
+    width: 389px;
+    height: 755px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+}
+.section-pictorial .grid-container .image-6{
+    grid-column: 2;
+    grid-row: 3;
+    width: 389px;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+    margin-right:32px;
+
+}
+.section-pictorial .grid-container .image-7{
+    grid-column: 2;
+    grid-row: 4;
+    width: 810px;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+}
+.section-pictorial .grid-container .image-8{
+    grid-column: 1;
+    grid-row: 5;
+    width: 810px;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
+}
+.section-pictorial .grid-container .image-9{
+    grid-column: 3;
+    grid-row: 5;
+    width: 389px;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-3, 24px);
 }
 .section-join{
     display: flex;
@@ -763,6 +958,7 @@ footer .footer-content .CTA .newsletter button{
     align-items: flex-start;
     gap: 32px;
     align-self: stretch;
+    background: var(--section-mode-bg-1, #1C260D);
 }
 .section-join .space-headings{
     display: flex;
@@ -773,7 +969,7 @@ footer .footer-content .CTA .newsletter button{
     align-self: stretch;
 }
 .section-join .space-headings h2{
-    color: var(--brand-5, #ED701D);
+    color: var(--element-mode-category-tag-font-color-1, #71C850);
     font-family: Montserrat;
     font-size: 60px;
     font-style: normal;
@@ -789,7 +985,8 @@ footer .footer-content .CTA .newsletter button{
     gap: var(--grid-gap-main, 32px);
     align-self: stretch;
     border-radius: var(--border-radius-3, 24px);
-    background: var(--brand-2, #CD2E94);
+border: 4px solid var(--section-mode-border-color-1, rgba(251, 252, 250, 0.20));
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0.2%, rgba(113, 200, 80, 0.10) 99.78%);
 }
 .section-join .CTA h3{
     color: var(--section-mode-font-color-1, #FBFCFA);
@@ -1064,7 +1261,7 @@ footer .footer-content .CTA .newsletter button{
     gap: var(--spacing-075-rem, 12px);
     border-radius: var(--border-radius-4, 99999px);
     border: 2px solid var(--button-mode-primary-bg-1-border, #71C850);
-    background: var(--button-mode-primary-bg-1, #71C850);
+    background: var(--brand-4, #FFD133);
     color: var(--button-mode-primary-font-color-1, #222021);
     font-family: Inter;
     font-size: 18px;
@@ -1168,10 +1365,13 @@ footer .footer-content .CTA .newsletter button{
     letter-spacing: -1.2px;
 }
 .section-blogs .grid{
+    display: flex;
     padding: var(--spacing-0-rem, 0px);
     align-items: flex-start;
     align-content: flex-start;
- 
+    gap: var(--spacing-25-rem, 40px) var(--spacing-125-rem, 20px);
+    flex: 1 0 0;
+    flex-wrap: wrap;
 }
 .section-blogs .grid .blog-card{
     display: flex;
@@ -1305,6 +1505,38 @@ footer .footer-content .CTA .newsletter button{
     gap: var(--spacing-0-rem, 0px);
     align-self: stretch;
 }
+.section-comment form button{
+    padding: 8px 16px;
+    border-radius: var(--border-radius-4, 99999px);
+    border: 2px solid var(--button-mode-primary-bg-1-border, #71C850);
+    background: var(--brand-4, #71C850);
+    color: var(--button-mode-primary-font-color-1, #222021);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 23.4px */
+}
+.section-comment .comment-wrap{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    justify-content: center; /* Center items horizontally */
+    width:100%;
+    gap: 32px; /* Removes the gap between the rows and columns */
+    padding-block: 0;
+    margin-top:32px;
+}
+.section-comment .comment-wrap h4{
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+.section-comment .comment-wrap h5{
+    grid-column: 3;
+    grid-row: 1;
+    
+}
 .section-comment .space-headings{
     display: flex;
     padding-bottom: var(--spacing-3-rem, 0px);
@@ -1348,18 +1580,26 @@ footer .footer-content .CTA .newsletter button{
     letter-spacing: -1.2px;
 }
 .section-next .grid{
+    display: flex;
     padding: var(--spacing-0-rem, 0px);
     align-items: flex-start;
     align-content: flex-start;
- 
+    flex: 1 0 0;
+    flex-wrap: wrap;
 }
 .section-next .grid .blog-card{
     display: flex;
-    padding: var(--spacing-075-rem, 12px);
     flex-direction: column;
     align-items: flex-start;
+    width: 373px;
     align-self: stretch;
     border-radius: var(--border-radius-3, 24px);
+}
+.section-next .grid .blog-card img{
+    height: 220px;
+    width:100%;
+    align-self: stretch;
+    border-radius: var(--border-radius-2, 16px);
 }
 .section-next .grid .blog-card .feature-info{
     display: flex;

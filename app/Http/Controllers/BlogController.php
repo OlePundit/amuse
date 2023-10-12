@@ -9,10 +9,13 @@ class BlogController extends Controller
 {
     public function blog()
     {
-        return view('Blog.blog');
+        $blogs = Blog::all();
+        $featuredBlogs = Blog::limit(3)->get();
+        return view('Blog.blog',compact('blogs','featuredBlogs'));
     }
-    public function show(Blog $blog)
+    public function show(Blog $slug)
     {
-        return view('Blog.show',compact('blog'));
+        $featuredBlogs = Blog::limit(3)->get();
+        return view('Blog.show',compact('slug','featuredBlogs'));
     }
 }

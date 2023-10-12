@@ -23,7 +23,7 @@ Route::get('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'p
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'blog'])->name('blog');
-Route::get('/blog/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
+Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contact'])->name('Contact.contact');
 Route::post('/store-contact', [App\Http\Controllers\ContactController::class, 'store'])->name('Contact.store');
 
@@ -39,3 +39,8 @@ Route::patch('/profile/{user}', [App\Http\Controllers\ProfileController::class, 
 Route::get('/client-booking/{user}', [App\Http\Controllers\BookingController::class, 'client'])->name('Profile.client');
 
 Route::post('/new-client-booking', [App\Http\Controllers\BookingController::class, 'clientstore'])->name('Booking.new-client');
+Route::post('/comment', [App\Http\Controllers\CommentsController::class,'store']);
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

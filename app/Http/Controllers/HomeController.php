@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Upcoming;
 
 class HomeController extends Controller
 {
@@ -20,6 +21,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $upcomings = Upcoming::all();
+        return view('home', compact('upcomings'));
     }
 }

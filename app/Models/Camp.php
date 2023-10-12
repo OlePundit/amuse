@@ -4,9 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str;
 
-class Blog extends Model
+class Camp extends Model
 {
     public function getRouteKeyName()
     {
@@ -21,10 +20,6 @@ class Blog extends Model
 
             return true;
         });
-    }
-    public function comment()
-    {
-        return $this->hasMany(Comment::class);
     }
 
 }

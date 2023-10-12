@@ -30,11 +30,61 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Camps
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/summer-camp">Amuse Summer Camp</a></li>
+                            <li><a class="dropdown-item" href="/public-holiday-camps">Public holiday camps</a></li>
+                            <li><a class="dropdown-item" href="/random-days">Random days</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/birthday-packages">Birthday packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/school-packages">School packages</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Weekends
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/saturday-camp">Saturday camp</a></li>
+                            <li><a class="dropdown-item" href="/tamasha-bustani">Tamasha Bustani</a></li>
+                            <li><a class="dropdown-item" href="/yoga-for-adults">Yoga for adults</a></li>
+                            <li><a class="dropdown-item" href="/outdoor-gym">Outdoor gym</a></li>
+                            <li><a class="dropdown-item" href="/bootcamp-challenges">Boot camp challenges</a></li>
+                            <li><a class="dropdown-item" href="/mountain-biking">Mountain biking</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/archery">Archery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/adventures">Adventures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/obstacle-course">Obstacle course</a>
+                        </li>
                     </ul>
+                   
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact us</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -72,7 +122,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
         <footer>
@@ -97,7 +147,7 @@
                         </div>
                         <div class="col-lg-6 newsletter">
                             <form class="d-flex">
-                                <input class="form-control">
+                                <input class="form-control" placeholder="Enter your email">
                                 <button>Subscribe</button>
                             </form>
                         </div>
