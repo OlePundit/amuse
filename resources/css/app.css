@@ -217,6 +217,7 @@ footer .footer-content .CTA .newsletter button {
     fill: var(--brand-2,  #CD2E94);
     opacity: .8;
     z-index: -1;
+
 }
 .section-info .info .vector3 {
     width: 349px;
@@ -263,6 +264,8 @@ footer .footer-content .CTA .newsletter button {
     align-items: center;
     justify-content: center;
     gap: var(--spacing-0-rem,  0px);
+    max-width:95rem;
+    margin:auto;
 }
 .svg-container {
     display: flex;
@@ -385,7 +388,7 @@ footer .footer-content .CTA .newsletter button {
     align-self: stretch;
     border-radius: var(--border-radius-2,  16px);
 }
-.section-info .info .grid .frame-3 .pic-wrap .caption, .section-info .info .grid .frame-4 .pic-wrap .caption {
+.section-info .info .grid .frame-3 .pic-wrap .caption,.section-info .info .grid .frame-3 .pic-wrap1 .caption, .section-info .info .grid .frame-4 .pic-wrap .caption, .section-info .info .grid .frame-4 .pic-wrap1 .caption {
     color: var(--section-mode-font-color-1,  #222021);
     font-family: Montserrat;
     font-size: 18px;
@@ -407,7 +410,8 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-start;
     gap: var(--section-top-small,  48px);
     align-self: stretch;
-    max-width: 90rem;
+    max-width:95rem;
+    margin:auto;
 }
 .section-testimonials .space-headings {
     display: flex;
@@ -450,6 +454,7 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-end;
     gap: var(--spacing-2-rem,  32px);
     align-self: stretch;
+    width:100%;
 }
 .section-testimonials .wrap .review-wrap {
     display: flex;
@@ -520,7 +525,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-testimonials .wrap .review-wrap-card1 {
     display: flex;
-    width: 284px;
+    width: 18rem;
     height: 380px;
     padding: var(--spacing-15-rem,  24px);
     flex-direction: column;
@@ -703,7 +708,8 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-start;
     gap: var(--section-top-small,  48px);
     align-self: stretch;
-    overflow: hidden;
+    max-width:95rem;
+    margin:auto;
 }
 .section-camps .space-headings {
     display: flex;

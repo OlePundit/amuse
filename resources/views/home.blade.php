@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="">
+<div class="container">
     <div class="row">
         <div class="col-lg-12">
             <div class="bg-video">
@@ -212,34 +212,29 @@ gap: var(--spacing-075-rem, 12px);">
                 <div class="col-lg-8 wrap">
                     <div class="activity-wrap">
                         <div class="activity-wrap-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="179" viewBox="0 0 180 179" fill="none">
-                            <circle cx="90" cy="89.5" r="89.5" fill="#D9D9D9"/>
-                            </svg>
+                            <img src="/storage/family.png" width="200" height="200" class="rounded-circle">
                             <h5>CAMPS</h5>
                         </div>
                     </div>
                     <div class="activity-wrap1">
                         <div class="activity-wrap-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="179" viewBox="0 0 180 179" fill="none">
-                            <circle cx="90" cy="89.5" r="89.5" fill="#D9D9D9"/>
-                            </svg>
+                            <img src="/storage/party.png" width="200" height="200" class="rounded-circle">
+
                             <h5>Birthday Packages</h5>
                         </div>
                     </div>
                     <div class="activity-wrap">
                         <div class="activity-wrap-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="179" viewBox="0 0 180 179" fill="none">
-                            <circle cx="90" cy="89.5" r="89.5" fill="#D9D9D9"/>
-                            </svg>
-                            <h5>Activity name</h5>
+                            <img src="/storage/school.png" width="200" height="200" class="rounded-circle">
+
+                            <h5>School packages</h5>
                         </div>
                     </div>
                     <div class="activity-wrap1">
                         <div class="activity-wrap-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="179" viewBox="0 0 180 179" fill="none">
-                            <circle cx="90" cy="89.5" r="89.5" fill="#D9D9D9"/>
-                            </svg>
-                            <h5>Activity name</h5>
+                            <img src="/storage/archery.png" width="200" height="200" class="rounded-circle">
+
+                            <h5>Archery</h5>
                         </div>
                     </div>
                 </div>
