@@ -33,7 +33,18 @@ class BookingController extends Controller
                 'booking_date'=>'',
                 'payment'=>'',
                 'contact_person'=>'',
-                'allergies'=>''
+                'allergies'=>'',
+                'last_name'=>'',
+                'child_last_name'=>'',
+                'from'=>'',
+                'to'=>'',
+                'day2'=>'',
+                'day3'=>'',
+                'day4'=>'',
+                'day5'=>'',
+                'day6'=>'',
+                'day7'=>'',
+                'day8'=>''
             ]);
             $data = new Booking([
                 'name_of_parent'=>$data['name_of_parent'],
@@ -46,6 +57,17 @@ class BookingController extends Controller
                 'payment'=>$data['payment'],
                 'contact_person'=>$data['contact_person'],
                 'allergies'=>$data['allergies'],
+                'last_name'=>$data['last_name'],
+                'child_last_name'=>$data['child_last_name'],
+                'from'=>$data['from'],
+                'to'=>$data['to'],
+                'day2'=>$data['day2'],
+                'day3'=>$data['day3'],
+                'day4'=>$data['day4'],
+                'day5'=>$data['day5'],
+                'day6'=>$data['day6'],
+                'day7'=>$data['day7'],
+                'day8'=>$data['day8']
             ]);
 
             $data->save();
@@ -70,7 +92,18 @@ class BookingController extends Controller
                 'booking_date' => '',
                 'payment' => '',
                 'contact_person' => '',
-                'allergies' => ''
+                'allergies' => '',
+                'last_name'=>'',
+                'child_last_name'=>'',
+                'from'=>'',
+                'to'=>'',
+                'day2'=>'',
+                'day3'=>'',
+                'day4'=>'',
+                'day5'=>'',
+                'day6'=>'',
+                'day7'=>'',
+                'day8'=>''
             ]);
 
             $parent = auth()->user()->name;
@@ -95,6 +128,17 @@ class BookingController extends Controller
                         'contact_person' => $data['contact_person'],
                         'allergies' => $child->allergies,
                         'created_at' => now(),
+                        'last_name'=>$parent,
+                        'child_last_name'=>$child->child_last_name,
+                        'from'=>$data['from'],
+                        'to'=>$data['to'],
+                        'day2'=>$data['day2'],
+                        'day3'=>$data['day3'],
+                        'day4'=>$data['day4'],
+                        'day5'=>$data['day5'],
+                        'day6'=>$data['day6'],
+                        'day7'=>$data['day7'],
+                        'day8'=>$data['day8']
                     ];
                 }
             }

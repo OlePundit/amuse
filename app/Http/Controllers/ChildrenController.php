@@ -15,6 +15,7 @@ class ChildrenController extends Controller
     {
         $data=request()->validate([
             'name_of_child'=>'',
+            'child_last_name'=>'',
             'school'=>'',
             'dob'=>'',
             'allergies'=>''
@@ -22,6 +23,7 @@ class ChildrenController extends Controller
 
         auth()->user()->children()->create([
             'name_of_child'=>$data['name_of_child'],
+            'child_last_name'=>$data['child_last_name'],
             'school'=>$data['school'],
             'dob'=>$data['dob'],
             'allergies'=>$data['allergies']

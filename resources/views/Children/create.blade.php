@@ -2,73 +2,90 @@
 
 @section('content')
 <div class="container">
-<h2 class="justify-content-center align-items-center text-center">All information collected is strictly to enhance our user experience and customer service. We do not provide any data to third party services </h2>
+<div class="section-children">
+<div class="space-headings">
+    <h2>Add new child</h2>
+    <h3 class="">All information collected is strictly to enhance our user experience and customer service. We do not provide any data to third party services </h3>
 
-    <form action = "/children" enctype="multipart/form-data" method="post">
-    @csrf
-    <div class="row">
-        <div class="col-8 offset-2">
-            <div class="row text-center">
-                <h2>Add new child</h2>
+</div>
+
+<form action = "/children" enctype="multipart/form-data" method="post">
+@csrf
+<div class="row">
+    <div class="">
+        
+        <div class="row child-wrap" style="margin-bottom:88px;margin-right:32px;">
+
+            <div class="col-md-4">
+                <input id="name_of_child" type="name_of_child" class="@error('name_of_child') is-invalid @enderror" placeholder="first name" name="name_of_child" value="{{ old('name_of_child') }}" required autocomplete="name_of_child" autofocus>
+
+                @error('name_of_child')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
-            <div class="row mb-4">
-                <label for="name_of_child" class="col-md-4 col-form-label text-md-end">Name of Child</label>
+            <div class="col-md-4">
+                <input id="child_last_name" type="child_last_name" class="@error('child_last_name') is-invalid @enderror" placeholder="last name" name="child_last_name" value="{{ old('child_last_name') }}" required autocomplete="child_last_name" autofocus>
 
-                <div class="col-md-6">
-                    <input id="name_of_child" type="text" class="form-control @error('name_of_child') is-invalid @enderror" name="name_of_child" value="{{ old('name_of_child') }}" required autocomplete="name_of_child" autofocus>
+                @error('child_last_name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="col-md-4">
+                <input id="dob" type="date" class="@error('dob') is-invalid @enderror" placeholder="date of birth" name="dob" value="" required autocomplete="dob" autofocus>
 
-                    @error('name_of_child')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </div>
-            </div>  
-            <div class="row mb-4">
-                <label for="school" class="col-md-4 col-form-label text-md-end">What school do they attend? (optional)</label>
+                @error('dob')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+            <div class="col-md-12 mt-2">
+                <input id="school" type="school" class="@error('school') is-invalid @enderror" placeholder="school" name="school" value="{{ old('school') }}" required autocomplete="school" autofocus>
 
-                <div class="col-md-6">
-                    <input id="school" type="text" class="form-control @error('name_of_chid') is-invalid @enderror" name="school" value="{{ old('school') }}" autocomplete="school" autofocus>
+                @error('school')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
 
-                    @error('school')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </div>
-            </div>  
+        </div>  
+        <div class="row mb-4">
 
-            <div class="row mb-4">
-                <label for="dob" class="col-md-4 col-form-label text-md-end">Date of birth of the child</label> 
+            <div class="col-md-12">
+        
+            <textarea class="form-control" id="allergies" name="allergies" placeholder="allergies or any other additional information"></textarea>
 
-                <div class="col-md-6">
+            </div>
             
-                <input type="date" class="form-control" id="dob" name="dob">
-
-                </div>
-                
-
-            </div>
-            <div class="row mb-4">
-                <label for="allergies" class="col-md-4 col-form-label text-md-end">Allergies that the child has or any other additional information</label> 
-
-                <div class="col-md-6">
-            
-                <textarea class="form-control" id="allergies" name="allergies"></textarea>
-
-                </div>
-                
-
-            </div>
-                    
-        <div class="row pt-4">
-            <button class="btn btn-primary text-white">Add New Post</button>
-        </div>
-
 
         </div>
+                
+   
+        <button class="" style="    display: flex;
+    padding: var(--spacing-1-rem,  16px) var(--grid-gap-main,  32px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-075-rem,  12px);
+    border-radius: var(--border-radius-4,  99999px);
+    border: 2px solid var(--button-mode-primary-bg-1-border,  #71C850);
+    background: var(--button-mode-primary-bg-1,  #71C850);
+    color: var(--button-mode-primary-font-color-1,  #1C260D);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%">Add New Post</button>
+
+
     </div>
+</div>
 
-    </form>
+</form>
+</div>
 </div>
 @endsection

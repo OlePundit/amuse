@@ -5,7 +5,7 @@
     <div class="contact-left">
         <div class="question">
             <h2>Have a Question ?
-                Get in Touch with us 👋
+                Get in Touch with us ðŸ‘‹
             </h2>
             <h3>Fill up the Form  and ou team will get back to within 24 hrs</h3>
             <form action="/store-contact" method="POST">
@@ -27,8 +27,7 @@
         </div>
     </div>
     <div class="contact-right">
-        <img class="contact-img" src="/storage/contact.png">
-        <img class="contact-img1" src="/storage/contact.png">
+        <img class="contact-img" src="/storage/image2.png" style="margin-top:205px;">
 
     </div>
 </div>
