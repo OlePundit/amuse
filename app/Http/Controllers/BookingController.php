@@ -108,7 +108,7 @@ class BookingController extends Controller
 
             $parent = auth()->user()->name;
             $email = auth()->user()->email;
-            $phone = auth()->user()->profile->phone;
+            $phone = auth()->user()->phone;
             $childIds = $data['name_of_child'];
             $bookingData = [];
 

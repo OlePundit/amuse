@@ -51,7 +51,7 @@
                             
                 <div class="row pt-4">
                     <button class="col-2" style="    display: flex;
-    padding: var(--spacing-1-rem,  16px) var(--grid-gap-main,  32px);
+    padding: var(--spacing-1-rem,  8px) var(--grid-gap-main,  16px);
     justify-content: center;
     align-items: center;
     gap: var(--spacing-075-rem,  12px);
@@ -59,10 +59,10 @@
     border: 2px solid var(--button-mode-primary-bg-1-border,  #71C850);
     background: var(--button-mode-primary-bg-1,  #71C850);
     color: var(--button-mode-primary-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 130%">Save Profile</button>
                 </div>
         

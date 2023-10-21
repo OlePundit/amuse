@@ -75,10 +75,10 @@
     border: 2px solid var(--button-mode-primary-bg-1-border,  #71C850);
     background: var(--button-mode-primary-bg-1,  #71C850);
     color: var(--button-mode-primary-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 130%">Add New Post</button>
 
 

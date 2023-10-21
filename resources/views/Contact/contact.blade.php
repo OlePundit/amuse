@@ -5,7 +5,7 @@
     <div class="contact-left">
         <div class="question">
             <h2>Have a Question ?
-                Get in Touch with us ðŸ‘‹
+                Get in Touch with us. 
             </h2>
             <h3>Fill up the Form  and ou team will get back to within 24 hrs</h3>
             <form action="/store-contact" method="POST">

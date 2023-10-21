@@ -142,7 +142,7 @@
                         @enderror
                     </div>
                     <div class="col-md-4">
-                        <input id="dob" type="date" class="@error('dob') is-invalid @enderror" placeholder="date of birth" name="dob" value="{{ old('dob') }}" required autocomplete="dob" autofocus>
+                        <input id="dob" type="text" placeholder="date of birth" class="@error('dob') is-invalid @enderror" name="dob" autocomplete="dob" autofocus>
 
                         @error('dob')
                             <span class="invalid-feedback" role="alert">

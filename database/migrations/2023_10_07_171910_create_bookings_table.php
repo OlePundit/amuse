@@ -21,10 +21,10 @@ return new class extends Migration
             $table->string('phone');
             $table->string('school');
             $table->string('dob');
-            $table->string('booking_date');
+            $table->string('booking_date')->nullable()->default('0');
             $table->string('payment');
             $table->string('contact_person');
-            $table->string('allergies');
+            $table->string('allergies')->nullable()->default('0');
             $table->timestamps();
         });
     }

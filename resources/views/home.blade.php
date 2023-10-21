@@ -13,7 +13,7 @@
 
                 </div>
                 <div class="video-caption">
-                <p>Fun and enriching opportunities for kids</p>
+                <p class="d-flex text-center align-items-center justify-content-center">Fun and enriching opportunities for kids</p>
                 </div>
             </div>
         </div>
@@ -27,10 +27,12 @@
                 <path opacity="0.8" d="M1.21634 122.816C8.09489 56.9774 94.5518 -3.87712 162.533 0.973435C230.514 5.824 322.965 145.082 314.523 180.703C306.081 216.324 182.174 342.294 126.982 308.041C71.7912 273.788 -5.66222 188.654 1.21634 122.816Z" fill="#CD2E94"/>
             </svg>
                   
-            <img src='/storage/vector3.png' class="vector3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="vector3" width="351" height="292" viewBox="0 0 351 292" fill="none">
+            <path opacity="0.8" d="M344.798 2.63114C316.859 -12.7448 3.35061 84.8878 1.01832 114.8C-1.31397 144.713 219.766 291.345 250.107 290.999C280.448 290.654 372.738 18.0071 344.798 2.63114Z" fill="#ED701D" stroke="#ED701D"/>
+            </svg>                
                 <h3>Join us for exceptional outdoor experiences <br> <span>that inspire, empower and shape young minds.</span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare</p>
-                <a href="" style="text-decoration:none">Book now</a>
+                <p>From thrilling programs to immersive education, we create unforgettable moments that shape young minds. Let’s embark on a journey of limitless curiosity and boundless fun!</p>
+                <a href="/booking/create" style="text-decoration:none">Book now</a>
             </div>
             <div class="col-lg-6 col-xl-6 col-sm-12 grid">
                 <div class="frame-3">
@@ -58,7 +60,7 @@
     </div>
     <div class="section-testimonials">
         <div class="space-headings">
-            <h2>The Feeling is <span> Mutual</span></h2>
+            <h2>Dont listen to <span> Us</span></h2>
         </div>
         <div class="frame-13">
             <div class="star">
@@ -83,7 +85,9 @@
 
         </div>
         <div class="wrap">
-            <img src="/storage/vector5.png" class="vector5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="vector5" width="342" height="301" viewBox="0 0 342 301" fill="none">
+            <path opacity="0.8" d="M340.716 136.553C329.006 106.89 25.2816 -17.8946 4.40528 3.65474C-16.4711 25.2041 60.262 279.152 83.8493 298.239C107.437 317.327 352.426 166.217 340.716 136.553Z" fill="#71C850" stroke="#71C850"/>
+            </svg>            
             <div class="review-wrap">
                 <div class="review-wrap-card">
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
@@ -155,7 +159,7 @@
             </svg>            
             @foreach($upcomings as $upcoming)
             <div class="event-card">
-                <img src="/storage/{{$upcoming->image}}">
+                <img src="/public/storage/{{$upcoming->image}}">
                 <div class="event-item">
                     <h5>{{$upcoming->title}}</h5>
                     <h6>{{$upcoming->caption}}</h6>
@@ -200,39 +204,39 @@
             <div class="row">
                 <div class="col-lg-4">
                     <h3>Outdoor Sports</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>From exploring the wonders of nature to developing valuable life skills, our engaging activities are designed to leave a lasting impact on young minds. We are passionate about creating a safe and nurturing environment where children can push their boundaries, build lifelong friendships, and uncover their true potential.</p>
                     <div class="" style="display: flex;
 padding: var(--spacing-0-rem, 0px);
 align-items: flex-start;
 gap: var(--spacing-075-rem, 12px);">
-                        <a href="" style="text-decoration:none;" class="book">Book Now!</a>
+                        <a href="/booking/create" style="text-decoration:none;" class="book">Book Now!</a>
                         <a href="" style="text-decoration:none;" class="see">See More</a>
                     </div>
                 </div>
                 <div class="col-lg-8 wrap">
                     <div class="activity-wrap">
                         <div class="activity-wrap-item">
-                            <img src="/storage/family.png" width="200" height="200" class="rounded-circle">
+                            <img src="/public/storage/family.png" width="180" height="180" class="rounded-circle">
                             <h5>CAMPS</h5>
                         </div>
                     </div>
                     <div class="activity-wrap1">
                         <div class="activity-wrap-item">
-                            <img src="/storage/party.png" width="200" height="200" class="rounded-circle">
+                            <img src="/public/storage/party.png" width="180" height="180" class="rounded-circle">
 
                             <h5>Birthday Packages</h5>
                         </div>
                     </div>
                     <div class="activity-wrap">
                         <div class="activity-wrap-item">
-                            <img src="/storage/school.png" width="200" height="200" class="rounded-circle">
+                            <img src="/public/storage/school.png" width="180" height="180" class="rounded-circle">
 
                             <h5>School packages</h5>
                         </div>
                     </div>
                     <div class="activity-wrap1">
                         <div class="activity-wrap-item">
-                            <img src="/storage/archery.png" width="200" height="200" class="rounded-circle">
+                            <img src="/public/storage/archery.png" width="180" height="180" class="rounded-circle">
 
                             <h5>Archery</h5>
                         </div>
@@ -242,4 +246,45 @@ gap: var(--spacing-075-rem, 12px);">
         </div>
     </div>    
 </div>
+
+@endsection
+@section('scripts')
+<script>
+    const sliderContainer = document.querySelector('.wrap');
+    const cards = document.querySelectorAll('.card');
+    let cardIndex = 0;
+
+    function showCard(index) {
+        cards.forEach((card, i) => {
+            card.style.transform = `translateX(-${index * 100}%)`;
+        });
+    }
+
+    // Initial display
+    showCard(cardIndex);
+
+    // Previous card
+    function showPreviousCard() {
+        if (cardIndex > 0) {
+            cardIndex--;
+            showCard(cardIndex);
+        }
+    }
+
+    // Next card
+    function showNextCard() {
+        if (cardIndex < cards.length - 1) {
+            cardIndex++;
+            showCard(cardIndex);
+        }
+    }
+
+    // Add event listeners for navigation
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+
+    prevButton.addEventListener('click', showPreviousCard);
+    nextButton.addEventListener('click', showNextCard);
+</script>
+
 @endsection

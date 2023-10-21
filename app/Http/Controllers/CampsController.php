@@ -8,8 +8,11 @@ use App\Models\Camp;
 
 class CampsController extends Controller
 {
+
     public function show(Camp $slug)
     {
-        return view('Camp.show',compact('slug'));
+        $featuredBlogs = Camp::inRandomOrder()->limit(3)->get();
+
+        return view('Camp.show',compact('slug','featuredBlogs'));
     }
 }

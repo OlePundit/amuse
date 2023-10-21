@@ -48,6 +48,11 @@
     }
   } );
   </script>
+      <script>
+  $( function() {
+    $( "#dob" ).datepicker();
+  } );
+  </script>
     <script>
   $( function() {
     $( "#datepicker" ).datepicker();
@@ -92,6 +97,7 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss','resources/css/app.css', 'resources/js/app.js'])
+    @yield('scripts')
 </head>
 <body>
     <div id="app">
@@ -153,8 +159,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/">Home</a>
                         </li>
+                        @if(Auth::user())
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/profile/{{ Auth::user()->id }}">Dashboard</a>
+                        </div>
+                        @endif
                         <li class="nav-item">
                             <a class="nav-link" href="/blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/booking/create">Book Now!</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/about">About us</a>

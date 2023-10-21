@@ -46,7 +46,7 @@ footer .footer-content .quick-links .links-list {
 }
 footer .footer-content .quick-links .links-list li {
     color: var(--link-mode-nav-font-color-1,  rgba(251,  252,  250,  .7));
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -64,7 +64,7 @@ footer .footer-content .CTA {
 }
 footer .footer-content .CTA h5 {
     color: var(--section-mode-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -110,7 +110,7 @@ footer .footer-content .contacts .contact-info .frame-10 .location {
 }
 footer .footer-content .contacts .contact-info .frame-10 .location li {
     color: #fbfcfa;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -118,7 +118,7 @@ footer .footer-content .contacts .contact-info .frame-10 .location li {
 }
 footer .footer-content .contacts .contact-info .frame-10 .copyright {
     color: var(--card-mode-primary-bg-1-border,  rgba(251,  252,  250,  .2));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -135,7 +135,7 @@ footer .footer-content .CTA .newsletter input {
     border-radius: var(--border-radius-4,  99999px);
     border: 1px solid var(--button-mode-secondary-bg-1-hover,  #FBFCFA);
     color: var(--section-mode-font-color-2,  rgba(251,  252,  250,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -157,10 +157,10 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-secondary-bg-1-border-hover,  #1C260D);
     background: var(--button-mode-secondary-bg-1-hover,  #1C260D);
     color: var(--button-mode-secondary-font-color-1-hover,  #FBFCFA);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 130%}
 @media (min-width: 1400px) {
     .container {
@@ -297,7 +297,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-info .info .join-us h3 span {
     color: var(--brand-5,  #ED701D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -306,7 +306,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-info .info .join-us p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -454,8 +454,15 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-end;
     gap: var(--spacing-2-rem,  32px);
     align-self: stretch;
+    overflow:hidden;
     width:100%;
 }
+.section-testimonials .wrap .cards{
+    display: flex;
+    transition: transform 0.3s;
+    will-change: transform;
+}
+
 .section-testimonials .wrap .review-wrap {
     display: flex;
     padding-bottom: 6rem;
@@ -694,7 +701,17 @@ footer .footer-content .CTA .newsletter button {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%}
+    line-height: 150%
+}
+.section-testimonials .frame-13 h6 {
+    color: var(--section-mode-font-color-1, #1C260D);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    text-transform: capitalize;
+}
 .section-testimonials .frame-13 .star {
     display: flex;
     padding: var(--spacing-0-rem,  0px);
@@ -944,7 +961,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-join .CTA h3 {
     color: var(--section-mode-font-color-1,  #FBFCFA);
-    font-family: Sen;
+    font-family: Montserrat;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -1036,7 +1053,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-featured .space-headings {
     display: flex;
-    padding-bottom: var(--spacing-3-rem,  0px);
+    padding-bottom: 3rem;
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-075-rem,  12px);
@@ -1044,7 +1061,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-featured .space-headings h2 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -1120,32 +1137,35 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-featured .featured .featured-blogs .featured-blog-small .details .caption h5 {
     color: var(--section-mode-font-color-2,  rgba(34,  32,  33,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%}
+    line-height: 150%
+}
 .section-featured .featured .featured-blogs .featured-blog-small .details .caption h6 {
     color: var(--brand-2,  #CD2E94);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%}
 .section-featured .featured .featured-blogs .featured-blog-small .details h5 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 130%}
+    line-height: 130%
+}
 .section-featured .featured .featured-blogs .featured-blog-small .details p {
     color: var(--section-mode-font-color-2,  rgba(34,  32,  33,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%}
+    line-height: 150%
+}
 .section-featured .featured .featured-item img {
     border-radius: var(--border-radius-3,  24px);
     flex: 1 0 0;
@@ -1168,7 +1188,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-featured .featured .featured-item .wrap .featured-item-header {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -1177,7 +1197,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-featured .featured .featured-item .wrap .details {
     color: #6d6e76;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1189,13 +1209,13 @@ footer .footer-content .CTA .newsletter button {
     align-items: center;
     gap: var(--spacing-075-rem,  12px);
     border-radius: var(--border-radius-4,  99999px);
-    border: 2px solid var(--button-mode-primary-bg-1-border,  #71C850);
-    background: var(--brand-4,  #FFD133);
+    border: none;
+    background: var(--brand-4,  #71C850);
     color: var(--button-mode-primary-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 130%}
 .section-featured .featured .featured-item .wrap .caption .category {
     display: flex;
@@ -1205,14 +1225,14 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-featured .featured .featured-item .wrap .caption .category h6, .section-featured .featured .featured-item .wrap .caption h5 {
     color: var(--section-mode-font-color-2,  rgba(34,  32,  33,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%}
 .section-featured .featured .featured-item .wrap .caption h5 span {
     color: #cd2e94;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1273,7 +1293,7 @@ footer .footer-content .CTA .newsletter button {
     line-height: 130%}
 .section-blogs .space-headings h2 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1286,8 +1306,7 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-start;
     align-content: flex-start;
     gap: var(--spacing-25-rem,  40px) var(--spacing-125-rem,  20px);
-    flex: 1 0 0;
-    flex-wrap: wrap;
+
 }
 .section-blogs .grid .blog-card {
     display: flex;
@@ -1296,6 +1315,12 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-start;
     align-self: stretch;
     border-radius: var(--border-radius-3,  24px);
+}
+.section-blogs .grid .blog-card img{
+    height: 220px;
+    align-self: stretch;
+    border-radius: var(--border-radius-2, 16px);
+    width:100%
 }
 .section-blogs .grid .blog-card .feature-info {
     display: flex;
@@ -1315,32 +1340,33 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-blogs .grid .blog-card .feature-info .caption h5 {
     color: var(--section-mode-font-color-2,  rgba(34,  32,  33,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%}
 .section-blogs .grid .blog-card .feature-info .caption h6 {
     color: var(--brand-2,  #CD2E94);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%}
 .section-blogs .grid .blog-card .feature-info h5 {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 130%}
 .section-blogs .grid .blog-card .feature-info p {
     color: #6d6e76;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%}
+    line-height: 150%
+}
 .section-CTA {
     display: flex;
     padding: var(--section-bottom-small,  48px) var(--section-horizontal-main,  104px) var(--section-bottom-medium,  88px) var(--section-horizontal-main,  104px);
@@ -1367,7 +1393,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-blog-content .space-headings h3, .section-blog-content .space-headings h4 {
     color: var(--section-mode-font-color-2,  rgba(34,  32,  33,  .7));
-    font-family: Poppins;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1376,7 +1402,7 @@ footer .footer-content .CTA .newsletter button {
 .section-blog-content .space-headings .title {
     color: var(--section-mode-font-color-1,  #222021);
     text-align: center;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -1396,6 +1422,11 @@ footer .footer-content .CTA .newsletter button {
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%
 }
 .section-comment {
     display: flex;
@@ -1411,11 +1442,12 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-primary-bg-1-border,  #71C850);
     background: var(--brand-4,  #71C850);
     color: var(--button-mode-primary-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 130%}
+    font-weight: 700;
+    line-height: 130%
+}
 .section-comment .comment-wrap {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -1444,7 +1476,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-comment .space-headings h2 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1461,7 +1493,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-next .space-headings {
     display: flex;
-    padding-bottom: var(--spacing-3-rem,  0px);
+    padding-bottom: 3rem;
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-075-rem,  12px);
@@ -1469,7 +1501,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-next .space-headings h2 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1516,32 +1548,33 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-next .grid .blog-card .feature-info .caption h5 {
     color: var(--section-mode-font-color-2,  rgba(34,  32,  33,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%}
 .section-next .grid .blog-card .feature-info .caption h6 {
     color: var(--brand-2,  #CD2E94);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%}
 .section-next .grid .blog-card .feature-info h5 {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 130%}
 .section-next .grid .blog-card .feature-info p {
     color: #6d6e76;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%}
+    line-height: 150%
+}
 .section-contact {
     display: flex;
     padding: var(--section-bottom-large,  144px) var(--section-horizontal-main,  104px);
@@ -1576,14 +1609,15 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-primary-bg-1-border,  #71C850);
     background: var(--button-mode-primary-bg-1,  #71C850);
     color: var(--button-mode-primary-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 130%}
+    font-weight: 700;
+    line-height: 130%
+}
 .section-contact .contact-left .question h2 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -1593,7 +1627,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-contact .contact-left .question h3 {
     color: var(--section-mode-font-color-2,  rgba(34,  32,  33,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1659,6 +1693,8 @@ footer .footer-content .CTA .newsletter button {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+    margin:auto;
+    max-width: 95rem;
     align-self: stretch;
     background: var(--brand-2-opacity-40,  rgba(205,  46,  148,  .4));
 }
@@ -1707,10 +1743,10 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-secondary-bg-1-border,  rgba(28,  38,  13,  .2));
     background: var(--button-mode-secondary-bg-1,  rgba(255,  255,  255,  0));
     color: var(--button-mode-secondary-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 130%
 }
 .section-profile h2 {
@@ -1724,7 +1760,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-children .space-headings h3 {
     color: var(--section-mode-font-color-2,  rgba(28,  38,  13,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1733,7 +1769,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-client-booking .space-headings h3 {
     color: var(--section-mode-font-color-2,  rgba(28,  38,  13,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1766,7 +1802,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-children .space-headings h2 {
     color: var(--section-mode-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -1775,7 +1811,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-client-booking .space-headings h2 {
     color: var(--section-mode-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -1784,7 +1820,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-edit .space-headings h2 {
     color: var(--section-mode-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -1808,7 +1844,7 @@ footer .footer-content .CTA .newsletter button {
     gap: var(--spacing-0-rem,  0px);
     align-self: stretch;
     color: var(--section-mode-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -1920,15 +1956,15 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-primary-bg-1-border,  #71C850);
     background: var(--button-mode-primary-bg-1,  #71C850);
     color: var(--button-mode-primary-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 130%
 }
 .section-booking-form form h4 {
     color: var(--section-mode-font-color-2,  rgba(28,  38,  13,  .7));
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1983,7 +2019,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-booking-form form .form-heading h2 {
     color: var(--section-mode-font-color-1,  #1C260D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 500;
@@ -2011,9 +2047,9 @@ footer .footer-content .CTA .newsletter button {
 .section-booking .space-headings h2 {
     color: var(--section-mode-font-color-1,  #1C260D);
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 60x;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 100%;
     letter-spacing: -.72px;
 }
@@ -2032,10 +2068,16 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-start;
     gap: var(--grid-gap-main,  32px);
     align-self: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
 }
 .section-booking .wrap .grid-card {
     display: flex;
     width: 389px;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+
     padding: var(--spacing-15-rem,  24px);
     flex-direction: column;
     align-items: flex-start;
@@ -2058,6 +2100,8 @@ footer .footer-content .CTA .newsletter button {
 .section-booking .wrap .grid-card1 {
     display: flex;
     width: 389px;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+
     padding: var(--spacing-15-rem,  24px);
     flex-direction: column;
     align-items: flex-start;
@@ -2127,10 +2171,13 @@ footer .footer-content .CTA .newsletter button {
     display: flex;
     padding: var(--section-bottom-large,  144px) var(--section-horizontal-main,  104px);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin:auto;
+    max-width: 95rem;
     gap: var(--spacing-0-rem,  0px);
     align-self: stretch;
     background: var(--brand-3-opacity-10,  rgba(44,  194,  247,  .1));
+
 }
 .section-about .about-header {
     display: flex;
@@ -2167,7 +2214,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-about .about-header .about-info h1 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2176,7 +2223,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-about .about-header .about-info h1 span {
     color: var(--brand-2,  #CD2E94);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2185,7 +2232,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-about .about-header .about-info p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2215,7 +2262,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-about .about-header .what-we h2 {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2224,7 +2271,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-about .about-header .what-we h2 span {
     color: var(--brand-2,  #CD2E94);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2233,7 +2280,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-about .about-header .what-we p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2247,6 +2294,8 @@ footer .footer-content .CTA .newsletter button {
     align-items: flex-start;
     gap: var(--section-top-medium,  88px);
     align-self: stretch;
+    margin:auto;
+    max-width: 95rem;
     background: var(--brand-3-opacity-40,  rgba(44,  194,  247,  .4));
 }
 .section-mission .about_company_card {
@@ -2279,7 +2328,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card .about_company_item h4 {
     color: var(--section-mode-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2288,7 +2337,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card .about_company_item h4 span {
     color: var(--brand-5,  #ED701D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2297,7 +2346,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card .about_company_item p {
     color: var(--section-mode-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2314,7 +2363,7 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-secondary-bg-1-border,  rgba(251,  252,  250,  .2));
     background: var(--button-mode-secondary-bg-1,  rgba(255,  255,  255,  0));
     color: var(--button-mode-secondary-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -2340,7 +2389,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card1 .about_company_item h4 {
     color: var(--section-mode-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2348,8 +2397,8 @@ footer .footer-content .CTA .newsletter button {
     letter-spacing: -1.56px;
 }
 .section-mission .about_company_card1 .about_company_item h4 span {
-    color: var(--brand-5,  #ED701D);
-    font-family: Inter;
+    color: var(--brand-5,  #FFD133);
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2358,7 +2407,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card1 .about_company_item p {
     color: var(--section-mode-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2375,7 +2424,7 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-secondary-bg-1-border,  rgba(251,  252,  250,  .2));
     background: var(--button-mode-secondary-bg-1,  rgba(255,  255,  255,  0));
     color: var(--button-mode-secondary-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -2408,7 +2457,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card2 .about_company_item h4 {
     color: var(--section-mode-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2417,7 +2466,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card2 .about_company_item h4 span {
     color: var(--brand-5,  #ED701D);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -2426,7 +2475,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-mission .about_company_card2 .about_company_item p {
     color: var(--section-mode-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2443,7 +2492,7 @@ footer .footer-content .CTA .newsletter button {
     border: 2px solid var(--button-mode-secondary-bg-1-border,  rgba(251,  252,  250,  .2));
     background: var(--button-mode-secondary-bg-1,  rgba(255,  255,  255,  0));
     color: var(--button-mode-secondary-font-color-1,  #FBFCFA);
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -2461,6 +2510,46 @@ footer .footer-content .CTA .newsletter button {
     gap: var(--spacing-35-rem,  56px);
     align-self: stretch;
     background: var(--brand-2-opacity-10,  rgba(205,  46,  148,  .1));
+    margin:auto;
+    max-width: 95rem;
+}
+.section-values .space-headings {
+    display: flex;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-075-rem,  12px);
+    align-self: stretch;
+}
+.section-values .space-headings h2 {
+    color: var(--section-mode-font-color-1,  #1C260D);
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.56px;
+}
+.section-values .space-headings p {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: var(--section-mode-font-color-1, #1C260D);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 24px */
+    letter-spacing: -0.72px;
+}
+.section-values .space-headings h2 span {
+    color: var(--section-mode-font-color-1,  #1C260D);
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.8px;
 }
 .section-values .about-us-missions {
     display: flex;
@@ -2501,7 +2590,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions .value-info .our-mission h3 {
     color: #232536;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2511,7 +2600,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions .value-info .our-mission h4 {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -2520,7 +2609,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions .value-info .our-mission p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -2536,7 +2625,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions .value-info .about-us h3 {
     color: #232536;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2546,7 +2635,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions .value-info .about-us h4 {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -2555,7 +2644,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions .value-info .about-us p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -2600,7 +2689,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions1 .value-info .our-mission h3 {
     color: #232536;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2610,7 +2699,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions1 .value-info .our-mission h4 {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -2619,7 +2708,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions1 .value-info .our-mission p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -2635,7 +2724,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions1 .value-info .about-us h3 {
     color: #232536;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -2645,7 +2734,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions1 .value-info .about-us h4 {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -2654,7 +2743,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-values .about-us-missions1 .value-info .about-us p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -2664,10 +2753,32 @@ footer .footer-content .CTA .newsletter button {
     display: flex;
     padding: var(--section-bottom-large,  144px) var(--section-horizontal-main,  104px);
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: var(--section-top-large,  144px);
     align-self: stretch;
     background: var(--section-mode-bg-1,  #FBFCFA);
+    margin:auto;
+    max-width: 95rem;
+}
+
+.section-coaches .space-headings h2 {
+    color: var(--section-mode-font-color-1,  #1C260D);
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.56px;
+}
+
+.section-coaches .space-headings h2 span {
+    color: var(--section-mode-font-color-1,  #1C260D);
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.8px;
 }
 .section-coaches .about_company_card {
     display: flex;
@@ -2694,7 +2805,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-coaches .about_company_card .about_company_info p {
     color: var(--section-mode-font-color-1,  #222021);
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2709,7 +2820,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-coaches .about_company_card .about_company_info .wrap h4 {
     color: #232536;
-    font-family: Inter;
+    font-family: Nunito;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -2727,7 +2838,7 @@ footer .footer-content .CTA .newsletter button {
 }
 .section-coaches .about_company_card .about_company_info .heading h3 {
     color: #232536;
-    font-family: Inter;
+    font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
