@@ -13,6 +13,9 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -46,6 +49,11 @@
  
       return date;
     }
+  } );
+  </script>
+        <script>
+  $( function() {
+    $( "#date" ).datepicker();
   } );
   </script>
       <script>
@@ -93,8 +101,46 @@
     $( "#datepicker7" ).datepicker();
   } );
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            loop: true,
+            centeredSlides: true,
+            grabCursor:true,
+            breakpoints: {
+                0: {
+                slidesPerView: 1,
+                },
+                500: {
+                slidesPerView: 2,
+                },
+                950: {
+                slidesPerView: 3,
+                },
+                1260: {
+                slidesPerView: 4,
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            
+        });
+    });
+
+  </script>
 
 
+ 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss','resources/css/app.css', 'resources/js/app.js'])
     @yield('scripts')
@@ -164,6 +210,14 @@
                             <a class="nav-link active" aria-current="page" href="/profile/{{ Auth::user()->id }}">Dashboard</a>
                         </div>
                         @endif
+                        @auth
+
+                        @if(Auth::user()->role_id === 3 )                        
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/coach_dashboard">Coach Dashboard</a>
+                        </div>       
+                        @endif
+                        @endauth
                         <li class="nav-item">
                             <a class="nav-link" href="/blog">Blog</a>
                         </li>
@@ -232,11 +286,11 @@
                 </div>
                 <div class="CTA">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12">
                             <h5>Subscribe to our news letter to get latest updates and news</h5>
 
                         </div>
-                        <div class="col-lg-6 newsletter">
+                        <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12 newsletter">
                             <form class="d-flex">
                                 <input class="form-control" placeholder="Enter your email">
                                 <button>Subscribe</button>

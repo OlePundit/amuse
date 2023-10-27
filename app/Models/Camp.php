@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+
 
 class Camp extends Model
 {
@@ -20,6 +22,10 @@ class Camp extends Model
 
             return true;
         });
+    }
+    public function reports()
+    {
+        return $this->hasMany(Report::class);
     }
 
 }

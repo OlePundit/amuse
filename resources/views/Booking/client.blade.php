@@ -4,7 +4,7 @@
 <div class="container">
 <div class="section-client-booking">
     <div class="space-headings">
-        <h2>Create booking</h2>
+        <h2 class="mt-4">Create booking</h2>
         <h3>All information collected is strictly to enhance our user experience and customer service. We do not provide any data to third party services </h3>
         <a href="/client-booking">Already have an account? </a>
 
@@ -18,7 +18,7 @@
                 
             </div>
             <div class="row mb-4">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12 mb-3">
                     <input id="from" type="text" class="@error('from') is-invalid @enderror" name="from" autocomplete="from" placeholder="from" autofocus>
 
                     @error('from')
@@ -40,7 +40,7 @@
             </div>  
             
             <div class="row mb-4">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <input id="datepicker" type="text" placeholder="day 1" class="@error('booking_date') is-invalid @enderror" name="booking_date" autocomplete="booking_date" autofocus>
 
                     @error('booking_date')
@@ -49,7 +49,7 @@
                         </span>
                     @enderror
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <input id="datepicker1" type="text" placeholder="day 2" class="@error('day2') is-invalid @enderror" name="day2" autocomplete="day2" autofocus>
 
                     @error('day2')
@@ -58,7 +58,7 @@
                         </span>
                     @enderror
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <input id="datepicker2" type="text" placeholder="day 3" class="@error('day3') is-invalid @enderror" name="day3" autocomplete="day3" autofocus>
 
                     @error('day3')
@@ -81,7 +81,7 @@
 
             </div>
             <div class="row" style="margin-bottom:88px;">
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker4" type="text" placeholder="day 5" class="@error('day5') is-invalid @enderror" name="day5" autocomplete="day5" autofocus>
 
                         @error('day5')
@@ -90,7 +90,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker5" type="text" placeholder="day 6" class="@error('day6') is-invalid @enderror" name="day6" autocomplete="day6" autofocus>
 
                         @error('day6')
@@ -99,7 +99,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker6" type="text" placeholder="day 7" class="@error('day7') is-invalid @enderror" name="day7" autocomplete="day7" autofocus>
 
                         @error('day7')
@@ -135,7 +135,7 @@
                 </div>
             </div> 
             <div class="row" style="margin-bottom:88px;">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3">
                     <input id="payment" type="text" class="@error('payment') is-invalid @enderror" placeholder="payment confirmation code" name="payment" autocomplete="payment" autofocus>
 
                     @error('payment')
@@ -157,7 +157,7 @@
             </div> 
          
                     
-            <button class="" style="    display: flex;
+            <button class="mb-4" style="    display: flex;
     padding: var(--spacing-1-rem,  16px) var(--grid-gap-main,  32px);
     justify-content: center;
     align-items: center;

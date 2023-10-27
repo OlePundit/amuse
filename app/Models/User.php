@@ -50,6 +50,12 @@ class User extends \TCG\Voyager\Models\User
         $user->profile()->create();
         });
     }
+    public function isCoach()
+    {
+        // Replace with your specific logic
+        return $this->name === 'name' && $this->email === 'email';
+    }
+
     public function profile()
     {
         return $this->hasOne(Profile::class);
@@ -61,5 +67,9 @@ class User extends \TCG\Voyager\Models\User
     public function comments()
     {
         return $this->hasMany(Comment::class);
+    }
+    public function reports()
+    {
+        return $this->hasMany(Report::class);
     }
 }

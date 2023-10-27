@@ -11,17 +11,17 @@
                         <div class="card-body">
                         <div class="row">
                                 <div class="col-6">
-                                    <h5 class="">Welcome <b>{{ $user->name}}</b></h5>
+                                    <h5 class="">Welcome <b>{{ Auth::user()->name}}</b></h5>
                                     
-                                    <p class="">Manage your Children</p>
+                                    <p class="">Manage your Reports</p>
                             
-<h4>    Children</h4> 
+<h4>    Reports</h4> 
 
 
 
 
                                     <div class="mt-4">
-                                        <a href="/children/create"style="border:1px solid #0F0B09; border-radius:8px;padding:7px;" class="mx-1 " >Add a Child</button> </a> 
+                                        <a href="/reports/create"style="border:1px solid #0F0B09; border-radius:8px;padding:7px;" class="mx-1 " >Create Report</button> </a> 
 
                                     </div>
                                     
@@ -45,37 +45,37 @@
                         <div class="card-body">
                             <div class="float-right ml-2">
                             </div>
-                            <h5 class="header-title mb-4 ">Children</h5>                                           
+                            <h5 class="header-title mb-4 ">Reports</h5>                                           
                         
                             <div class="table-responsive">
                                 <table class="table table-centered table-hover mb-0">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="">Child #</th>
-                                            <th scope="col" class="">First name</th>
-                                            <th scope="col" class="">Second name</th>                                                          
+                                            <th scope="col" class="">Report #</th>
+                                            <th scope="col" class="">Remarks</th>
+                                            <th scope="col" class="">Camp name</th>                                                          
                                             
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    @if($user->children) 
+                                    @if(Auth::user()->reports) 
                                     @php
-                                    $childNumber = 1; // Initialize the child number counter
+                                    $reportNumber = 1; // Initialize the report number counter
                                     @endphp  
-                                    @foreach($user->children as $children)
+                                    @foreach(Auth::user()->reports as $report)
                                         <tr>
                                             <td scope="row">
-                                                {{ $childNumber }}
+                                                {{ $reportNumber }}
                                             </td>
                                             
-                                            <td class="">{{$children->name_of_child}}</td>
-                                                <td class="">{{$children->child_last_name}}</td>
+                                            <td class="">{{$report->remarks}}</td>
+                                                <td class="">{{$report->camp_name}}</td>
                                             
                         
                                             
                                         </tr>
                                         @php
-                                        $childNumber++; // Increment the child number counter
+                                        $reportNumber++; // Increment the child number counter
                                         @endphp 
                                     @endforeach
                                     @else

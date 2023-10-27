@@ -7,7 +7,7 @@
             <h1>We are <span>dedicated to high quality learning and recreational opportunities for kids, with a focus  on the great outdoor. </span></h1>
             <p>We believe that children learn best through play and exploration, and we strive to create fun and impactful experiences that will inspire a lifelong love of learning.</p>
             <div class="frame11">
-                <img src="/storage/team1.png" class="contact2">
+                <img src="/storage/team1.png" class="contact2 mb-4">
                 <img src="/storage/team2.png" class="contact3">
 
             </div>
@@ -129,7 +129,7 @@
     <div class="space-headings">
         <h2>Our <span>coaches</span></h2>
     </div>
-    <div class="about_company_card">
+    <div class="about_company_card1">
         <div class="about_company_info">
             <div class="wrap">
                 <div class="heading">
@@ -154,7 +154,7 @@
         </div>
         
     </div>
-    <div class="about_company_card">
+    <div class="about_company_card1">
         <div class="about_company_info">
             <div class="wrap">
                 <div class="heading">
@@ -179,7 +179,7 @@
         </div>
         
     </div>
-    <div class="about_company_card">
+    <div class="about_company_card1">
         <div class="about_company_info">
             <div class="wrap">
                 <div class="heading">
@@ -204,7 +204,7 @@
         </div>
         
     </div>
-    <div class="about_company_card">
+    <div class="about_company_card1">
         <div class="about_company_info">
             <div class="wrap">
                 <div class="heading">
@@ -230,7 +230,7 @@ He has been with Amuse Kenya since 2022 and is currently our Mountain Biking Coa
         </div>
         
     </div>
-    <div class="about_company_card">
+    <div class="about_company_card1">
         <div class="about_company_info">
             <div class="wrap">
                 <div class="heading">
@@ -255,7 +255,7 @@ He has been with Amuse Kenya since 2022 and is currently our Mountain Biking Coa
         </div>
         
     </div>
-    <div class="about_company_card">
+    <div class="about_company_card1">
         <div class="about_company_info">
             <div class="wrap">
                 <div class="heading">

@@ -7,9 +7,12 @@
      </div>
      <div class="featured">
         <div class="featured-item">
-            <img src="/storage/featured.png">
+        @if($firstBlog)
+            <a href="/blog/{{$firstBlog->slug}}" style="text-decoration:none;">
+                <img src="/public/storage/{{$firstBlog->thumbnail}}">
             <div class="wrap">
                 <div class="caption">
+                   
                     <h5>By <span>{{$firstBlog->author}}</span>  {{$firstBlog->created_at}}</h5>
                     <div class="category align-items-baseline">
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
@@ -17,10 +20,11 @@
                         </svg>
                         <h6>{{$firstBlog->category}}</h6>
                     </div>
+
                 </div>
                 <p class="featured-item-header">{{$firstBlog->title}}</p>
                 <p class="details">{!! Str::limit(strip_tags($firstBlog->body), 120, '...') !!}</p>
-                <a href="" style="text-decoration:none;">Read More
+                <a href="" style="text-decoration:none;" class="read-more">Read More
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <mask id="mask0_578_589" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                         <rect width="24" height="24" fill="#D9D9D9"/>
@@ -30,11 +34,14 @@
                     </g>
                     </svg>
                 </a>
+               
             </div>
-            
+            </a>
+            @endif 
         </div>
         <div class="featured-blogs">
             @foreach($featuredBlogs as $featuredBlog)
+            <a href="/blog/{{$featuredBlog->slug}}" style="text-decoration:none;">
             <div class="featured-blog-small">
                <img src="/public/storage/{{$featuredBlog->thumbnail}}" style="width: 210px;
 height: 143px;
@@ -51,6 +58,7 @@ border-radius: var(--border-radius-1, 8px);
                     </div>
                </div>
             </div>
+            </a>
             @endforeach  
         </div>
      </div>

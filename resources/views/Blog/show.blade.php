@@ -10,7 +10,7 @@
         </div>
         <div class="title">{{$slug->title}}</div>
     </div>
-    <img src='/public/storage/{{$slug->thumbnail}}' class="thumbnail" style="margin-bottom:48px;">
+    <img src='/storage/{{$slug->thumbnail}}' class="thumbnail" style="margin-bottom:48px;">
     <div class="body">{!!$slug->body!!}</div>
 
 </div>

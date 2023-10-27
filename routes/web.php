@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Mail\BookingConfirmationEmail;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,8 @@ Route::get('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'p
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'blog'])->name('blog');
 Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
+Route::get('/camps/{slug}', [App\Http\Controllers\CampsController::class, 'show'])->name('camp.show');
+
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'contact'])->name('Contact.contact');
 Route::post('/store-contact', [App\Http\Controllers\ContactController::class, 'store'])->name('Contact.store');
 
@@ -40,7 +43,14 @@ Route::get('/client-booking/{user}', [App\Http\Controllers\BookingController::cl
 
 Route::post('/new-client-booking', [App\Http\Controllers\BookingController::class, 'clientstore'])->name('Booking.new-client');
 Route::post('/comment', [App\Http\Controllers\CommentsController::class,'store']);
+Route::get('/coach_dashboard', [App\Http\Controllers\CoachesController::class,'index']);
+Route::get('/reports/create', [App\Http\Controllers\CoachesController::class,'create']);
+Route::post('/reports', [App\Http\Controllers\CoachesController::class,'store']);
+Route::get('/email', function() {
+    return new BookingConfirmationEmail();
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+

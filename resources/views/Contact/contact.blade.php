@@ -10,18 +10,30 @@
             <h3>Fill up the Form  and ou team will get back to within 24 hrs</h3>
             <form action="/store-contact" method="POST">
                 @csrf
-                <div class="">
-                    <input type="text" name="first-name" class="firstname" placeholder="first name">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <input type="text" name="first-name" class="firstname" placeholder="first name">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" name="last-name" class="lastname" placeholder="last name">
+
+                    </div>
                 </div>
-                <div class="">
-                    <input type="text" name="last-name" class="lastname" placeholder="last name">
+               
+                <div class="row">
+                    <div class="col-lg-12 mb-4">
+                        <input type="email" name="email" class="email" placeholder="email">
+
+                    </div>                
                 </div>
-                <div class="">
-                    <input type="email" name="email" class="email" placeholder="email">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <textarea name="message" class="message" placeholder="message"></textarea>
+
+                    </div>                
                 </div>
-                <div class="">
-                    <textarea name="message" class="message" placeholder="message"></textarea>
-                </div>
+
                 <button type="submit">Submit</button>
             </form>
         </div>

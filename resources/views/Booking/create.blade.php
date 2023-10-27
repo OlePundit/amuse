@@ -72,7 +72,7 @@
 
                 <div class="row mb-4">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input id="name_of_parent" type="text" class=" @error('name_of_parent') is-invalid @enderror" name="name_of_parent" placeholder="first name" value="{{ old('name_of_parent') }}" required autocomplete="name_of_parent" autofocus>
 
                         @error('name_of_parent')
@@ -93,7 +93,7 @@
                 </div>  
                 <div class="row" style="margin-bottom:88px;">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input id="email" type="email" class="@error('email') is-invalid @enderror" name="email" placeholder="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         @error('email')
@@ -123,7 +123,7 @@
                 </div>
                 <div class="row child-wrap" style="margin-bottom:88px;margin-right:32px;">
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-3">
                         <input id="name_of_child" type="name_of_child" class="@error('name_of_child') is-invalid @enderror" placeholder="first name" name="name_of_child" value="{{ old('name_of_child') }}" required autocomplete="name_of_child" autofocus>
 
                         @error('name_of_child')
@@ -132,7 +132,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-3">
                         <input id="child_last_name" type="child_last_name" class="@error('child_last_name') is-invalid @enderror" placeholder="last name" name="child_last_name" value="{{ old('child_last_name') }}" required autocomplete="child_last_name" autofocus>
 
                         @error('child_last_name')
@@ -150,7 +150,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-12 mt-2">
+                    <div class="col-md-12 mt-3">
                         <input id="school" type="school" class="@error('school') is-invalid @enderror" placeholder="school" name="school" value="{{ old('school') }}" required autocomplete="school" autofocus>
 
                         @error('school')
@@ -166,7 +166,7 @@
 
 
                 <div class="row mb-4">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input id="from" type="text" class="@error('from') is-invalid @enderror" name="from" autocomplete="from" placeholder="from" autofocus>
 
                         @error('from')
@@ -186,9 +186,10 @@
                     </div>
 
                 </div>  
-                
+                <h4>Pick the specific days if you plan on coming on separate days</h4>
+
                 <div class="row mb-4">
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker" type="text" placeholder="day 1" class="@error('booking_date') is-invalid @enderror" name="booking_date" autocomplete="booking_date" autofocus>
 
                         @error('booking_date')
@@ -197,7 +198,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker1" type="text" placeholder="day 2" class="@error('day2') is-invalid @enderror" name="day2" autocomplete="day2" autofocus>
 
                         @error('day2')
@@ -206,7 +207,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker2" type="text" placeholder="day 3" class="@error('day3') is-invalid @enderror" name="day3" autocomplete="day3" autofocus>
 
                         @error('day3')
@@ -229,7 +230,7 @@
 
                 </div> 
                 <div class="row" style="margin-bottom:88px;">
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker4" type="text" placeholder="day 5" class="@error('day5') is-invalid @enderror" name="day5" autocomplete="day5" autofocus>
 
                         @error('day5')
@@ -238,7 +239,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker5" type="text" placeholder="day 6" class="@error('day6') is-invalid @enderror" name="day6" autocomplete="day6" autofocus>
 
                         @error('day6')
@@ -247,7 +248,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 mb-3">
                         <input id="datepicker6" type="text" placeholder="day 7" class="@error('day7') is-invalid @enderror" name="day7" autocomplete="day7" autofocus>
 
                         @error('day7')
@@ -271,7 +272,7 @@
                 </div> 
                 <label for="name_of_parent" class="parent-details">Final Part</label>
                 <div class="row" style="margin-bottom:88px;">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <input id="payment" type="text" class="@error('payment') is-invalid @enderror" placeholder="payment confirmation code" name="payment" autocomplete="payment" autofocus>
 
                         @error('payment')
@@ -322,9 +323,4 @@
 
     
 </div>
-@section('scripts')
-$('.input-daterange input').each(function() {
-    $(this).datepicker('clearDates');
-});
-@endsection
 @endsection
