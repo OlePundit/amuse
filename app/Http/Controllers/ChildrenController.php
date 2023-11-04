@@ -7,6 +7,11 @@ use App\Models\Children;
 
 class ChildrenController extends Controller
 {
+    public function __construct()
+    {
+        return $this->middleware('auth');
+    }
+
     public function create()
     {
         return view('Children.create');

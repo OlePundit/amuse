@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
 <div class="section-about">
     <div class="row about-header">
         <div class="about-info">
@@ -267,5 +268,6 @@ He has been with Amuse Kenya since 2022 and is currently our Mountain Biking Coa
         </div>
         <img src="/storage/mary.jpg">
     </div>
+</div>
 </div>
 @endsection

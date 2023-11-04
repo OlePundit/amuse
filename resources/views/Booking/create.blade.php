@@ -15,8 +15,8 @@
                         <path d="M27.2133 11.2133L20.7733 4.77333C20.28 4.28 19.6 4 18.8933 4H6.66667C5.2 4 4 5.2 4 6.66667V25.3333C4 26.8 5.2 28 6.66667 28H25.3333C26.8 28 28 26.8 28 25.3333V13.1067C28 12.4 27.72 11.72 27.2133 11.2133ZM9.33333 9.33333H18.6667V12H9.33333V9.33333ZM22.6667 22.6667H9.33333V20H22.6667V22.6667ZM22.6667 17.3333H9.33333V14.6667H22.6667V17.3333Z" fill="#323232"/>
                         </svg>
                     </div>
-                    <h3>Read the behavioural guidelines</h3>
-                    <p>Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></p>
+                    <h3>Check out our upcoming camps</h3>
+                    <p>Browse through the camps and check out our, <a href="/#section-camps" >upcoming camps</span></a>
                 </div>
                 <div class="grid-card">
                     <div class="class-item">
@@ -31,8 +31,8 @@
                         <path d="M21.6673 0.333334H16.334V5.66667H21.6673V0.333334Z" fill="#323232"/>
                         </svg>
                     </div>
-                    <h3>Complete online registration form</h3>
-                    <p>Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit</span></p>
+                    <h3>Fill the booking form</h3>
+                    <p>Our <a href="/children/create">parent's dashboard</a> makes it easier to manage multiple children</p>
                 </div>
                 <div class="grid-card1">
                     <div class="class-item">
@@ -48,7 +48,7 @@
                         </svg>
                     </div>
                     <h3>Payment</h3>
-                    <p>Lorem ipsum Lipa na M-Pesa, Buy Goods Till Number <span>5003075</span></p>
+                    <p>Lipa na M-Pesa, Buy Goods Till Number <span>5003075</span></p>
                 </div>
             </div>
         </div>

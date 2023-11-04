@@ -50,11 +50,11 @@
                 <div class="frame-4" >
                     <div class="pic-wrap">
                         <img src="/storage/foot.png">
-                        <div class="caption">Thrilling programs</div>
+                        <div class="caption">Unique Learning</div>
                     </div>
                     <div class="pic-wrap1">
                         <img src="/storage/tag.png">
-                        <div class="caption">Engaging Activities</div>
+                        <div class="caption">Outdoor fun</div>
                     </div>
                 </div>
             </div>
@@ -93,61 +93,52 @@
             <div class="slider-container swiper">
                 <div class="mySwiper">
                     <div class="card-wrapper swiper-wrapper" style="padding-top:10rem;">
-                        <div class="review-wrap swiper-slide">
+                        <div class="review-wrap swiper-slide" style="width:320px;">
                             <div class="review-wrap-card">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <p>The holiday camp provided a perfect balance of learning and play. Our kids returned home with unforgettable memories and new skills.</p>
                                 <div class="client">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                        <circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
-                                    </svg>
-                                    <h5>Client name</h5>
+                                    <img src="/storage/samuel.jpg" class="rounded-circle" width="36" height="36">
+                                    <h5>Samuel Mwangi </h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="review-wrap1 swiper-slide">
+                        <div class="review-wrap1 swiper-slide" style="width:320px;">
                             <div class="review-wrap-card1">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <p>Our family's summer wouldn't be complete without this camp. It's a fantastic place for kids to learn, grow, and have the time of their lives!</p>
                                 <div class="client">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                        <circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
-                                    </svg>
-                                    <h5>Client name</h5>
+                                    <img src="/storage/sophie.jpg" class="rounded-circle" width="36" height="36">
+
+                                    <h5>Sophie Müller</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="review-wrap2 swiper-slide">
+                        <div class="review-wrap2 swiper-slide" style="width:320px;">
                             <div class="review-wrap-card2">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <p>Thank you for an amazing experience! Our children enjoyed every moment, and we felt confident in the camp's safety and staff.</p>
                                 <div class="client">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                        <circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
-                                    </svg>
-                                    <h5>Client name</h5>
+                                    <img src="/storage/priya.jpg" class="rounded-circle" width="36" height="36">
+                                    <h5>Priya Patel</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="review-wrap3 swiper-slide">
+                        <div class="review-wrap3 swiper-slide" style="width:320px;">
                             <div class="review-wrap-card3">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <p>Our kids had a blast at the holiday camp! They made new friends, had fun adventures, and can't wait to go back.</p>
                                 <div class="client">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                        <circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
-                                    </svg>
-                                    <h5>Client name</h5>
+                                    <img src="/storage/rossi.jpg" class="rounded-circle" width="36" height="36">
+
+                                    <h5>Luca Rossi</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="review-wrap4 ">
+                        <div class="review-wrap4 swiper-slide" style="width:320px;">
                             <div class="review-wrap-card4">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                <p>Choosing this camp for our kids was the best decision ever. They returned with smiles, stories, and newfound confidence. Highly recommended!</p>
                                 <div class="client">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                        <circle cx="18" cy="18" r="18" fill="#D9D9D9"/>
-                                    </svg>
-                                    <h5>Client name</h5>
+                                    <img class="rounded-circle" src="/storage/grace.jpg" width="36" height="36">
+                     
+                                    <h5>Grace Kimani </h5>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -162,7 +153,7 @@
         </div>
 
     </div>
-    <div class="section-camps">
+    <div class="section-camps" id="#section-camps">
         <div class="space-headings">
             <h2><span> Upcoming</span> Camps</h2>
         </div>
@@ -189,15 +180,15 @@
             <h2>Play is Powerful</h2>
         </div>
         <div class="grid-container">
-            <img src="/storage/pictorial.png" alt="Image 1" class="image-1">
-            <img src="/storage/pictorial1.png" alt="Image 2" class="image-2">
-            <img src="/storage/pictorial1.png" alt="Image 3" class="image-3">
-            <img src="/storage/pictorial2.png" alt="Image 4" class="image-4">
-            <img src="/storage/pictorial2.png" alt="Image 4" class="image-5">
-            <img src="/storage/pictorial.png" alt="Image 4" class="image-6">
-            <img src="/storage/pictorial1.png" alt="Image 7" class="image-7">
-            <img src="/storage/pictorial1.png" alt="Image 8" class="image-8">
-            <img src="/storage/pictorial.png" alt="Image 9" class="image-9">
+            <img src="/storage/Frame15.png" alt="Image 1" class="image-1">
+            <img src="/storage/Frame16.png" alt="Image 2" class="image-2">
+            <img src="/storage/frame17.png" alt="Image 3" class="image-3">
+            <img src="/storage/Frame23.png" alt="Image 4" class="image-4">
+            <img src="/storage/Frame24.png" alt="Image 4" class="image-5">
+            <img src="/storage/Frame22.png" alt="Image 4" class="image-6">
+            <img src="/storage/Frame19.png" alt="Image 7" class="image-7">
+            <img src="/storage/Frame20.png" alt="Image 8" class="image-8">
+            <img src="/storage/Frame21.png" alt="Image 9" class="image-9">
 
 
         </div>
