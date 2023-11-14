@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Amuse Kenya</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -19,8 +19,6 @@
 
  
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss','resources/css/app.css', 'resources/js/app.js'])
-    @yield('scripts')
 </head>
 <body>
     <div id="app">
@@ -240,6 +238,11 @@
             </div>
         </footer>
     </div>
+    @yield('scripts')
+    <link rel="stylesheet" href="{{ asset('build/assets/app-041e359a.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-78da6daa.css') }}">
+    <script src="{{ asset('build/assets/app-c75e0372.js') }}"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

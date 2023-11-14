@@ -37,11 +37,11 @@
             <div class="col-lg-3 col-xl-3 col-sm-12  col-md-12 grid">
                 <div class="frame-3 ">
                     <div class="pic-wrap">
-                        <img src="/storage/foot.png">
+                        <img src="/storage/foot.webp" class="img-fluid">
                         <div class="caption">Thrilling programs</div>
                     </div>
                     <div class="pic-wrap1">
-                        <img src="/storage/tag.png">
+                        <img src="/storage/tag.webp" class="img-fluid">
                         <div class="caption">Engaging Activities</div>
                     </div>
                 </div>
@@ -49,11 +49,11 @@
             <div class="col-lg-3 col-xl-3 col-sm-12 col-md-12 grid">
                 <div class="frame-4" >
                     <div class="pic-wrap">
-                        <img src="/storage/foot.png">
+                        <img src="/storage/foot.webp" class="img-fluid">
                         <div class="caption">Unique Learning</div>
                     </div>
                     <div class="pic-wrap1">
-                        <img src="/storage/tag.png">
+                        <img src="/storage/tag.webp" class="img-fluid">
                         <div class="caption">Outdoor fun</div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                             <div class="review-wrap-card">
                                 <p>The holiday camp provided a perfect balance of learning and play. Our kids returned home with unforgettable memories and new skills.</p>
                                 <div class="client">
-                                    <img src="/storage/samuel.jpg" class="rounded-circle" width="36" height="36">
+                                    <img src="/storage/samuel.webp" class="rounded-circle img-fluid" width="36" height="36">
                                     <h5>Samuel Mwangi </h5>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                             <div class="review-wrap-card1">
                                 <p>Our family's summer wouldn't be complete without this camp. It's a fantastic place for kids to learn, grow, and have the time of their lives!</p>
                                 <div class="client">
-                                    <img src="/storage/sophie.jpg" class="rounded-circle" width="36" height="36">
+                                    <img src="/storage/sophie.webp" class="rounded-circle img-fluid" width="36" height="36">
 
                                     <h5>Sophie Müller</h5>
                                 </div>
@@ -116,7 +116,7 @@
                             <div class="review-wrap-card2">
                                 <p>Thank you for an amazing experience! Our children enjoyed every moment, and we felt confident in the camp's safety and staff.</p>
                                 <div class="client">
-                                    <img src="/storage/priya.jpg" class="rounded-circle" width="36" height="36">
+                                    <img src="/storage/priya.webp" class="rounded-circle img-fluid" width="36" height="36">
                                     <h5>Priya Patel</h5>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                             <div class="review-wrap-card3">
                                 <p>Our kids had a blast at the holiday camp! They made new friends, had fun adventures, and can't wait to go back.</p>
                                 <div class="client">
-                                    <img src="/storage/rossi.jpg" class="rounded-circle" width="36" height="36">
+                                    <img src="/storage/rossi.webp" class="rounded-circle img-fluid" width="36" height="36">
 
                                     <h5>Luca Rossi</h5>
                                 </div>
@@ -135,7 +135,7 @@
                             <div class="review-wrap-card4">
                                 <p>Choosing this camp for our kids was the best decision ever. They returned with smiles, stories, and newfound confidence. Highly recommended!</p>
                                 <div class="client">
-                                    <img class="rounded-circle" src="/storage/grace.jpg" width="36" height="36">
+                                    <img class="rounded-circle img-fluid" src="/storage/grace.webp" width="36" height="36">
                      
                                     <h5>Grace Kimani </h5>
                                 </div>
@@ -163,7 +163,7 @@
             </svg>            
             @foreach($upcomings as $upcoming)
             <div class="event-card">
-                <img src="/storage/{{$upcoming->image}}">
+                <img src="/storage/{{$upcoming->image}}" class="img-fluid">
                 <div class="event-item">
                     <h5>{{$upcoming->title}}</h5>
                     <h6>{{$upcoming->caption}}</h6>
@@ -174,32 +174,7 @@
         <div class="dot-group">
             <div class="dot-indicator"></div>
         </div>
-    </div>
-    <div class="section-pictorial justify-content-center align-items-center">
-        <div class="space-headings">
-            <h2>Play is Powerful</h2>
-        </div>
-        <div class="grid-container">
-            <img src="/storage/Frame15.png" alt="Image 1" class="image-1">
-            <img src="/storage/Frame16.png" alt="Image 2" class="image-2">
-            <img src="/storage/frame17.png" alt="Image 3" class="image-3">
-            <img src="/storage/Frame23.png" alt="Image 4" class="image-4">
-            <img src="/storage/Frame24.png" alt="Image 4" class="image-5">
-            <img src="/storage/Frame22.png" alt="Image 4" class="image-6">
-            <img src="/storage/Frame19.png" alt="Image 7" class="image-7">
-            <img src="/storage/Frame20.png" alt="Image 8" class="image-8">
-            <img src="/storage/Frame21.png" alt="Image 9" class="image-9">
-
-
-        </div>
-        <div class="wrap">           
-          
-            
-                   
-            
-        </div>
-
-    </div> 
+    </div>    
     <div class="section-join">
         <div class="space-headings">
             <h2>Join Us!</h2>
@@ -220,27 +195,27 @@ gap: var(--spacing-075-rem, 12px);">
                 <div class="wrap">
                     <div class="activity-wrap col-lg-2 col-sm-12 col-12">
                         <div class="activity-wrap-item">
-                            <img src="/public/storage/family.png" width="180" height="180" class="rounded-circle">
+                            <img src="/public/storage/family.webp" width="180" height="180" class="rounded-circle img-fluid">
                             <h5>CAMPS</h5>
                         </div>
                     </div>
                     <div class="activity-wrap1 col-lg-2 col-sm-12 col-12">
                         <div class="activity-wrap-item">
-                            <img src="/public/storage/party.png" width="180" height="180" class="rounded-circle">
+                            <img src="/public/storage/party.webp" width="180" height="180" class="rounded-circle img-fluid">
 
                             <h5>Birthday Packages</h5>
                         </div>
                     </div>
                     <div class="activity-wrap col-lg-2 col-sm-12 col-12">
                         <div class="activity-wrap-item">
-                            <img src="/public/storage/school.png" width="180" height="180" class="rounded-circle">
+                            <img src="/public/storage/school.webp" width="180" height="180" class="rounded-circle img-fluid">
 
                             <h5>School packages</h5>
                         </div>
                     </div>
                     <div class="activity-wrap1 col-lg-2 col-sm-12 col-12">
                         <div class="activity-wrap-item">
-                            <img src="/public/storage/archery.png" width="180" height="180" class="rounded-circle">
+                            <img src="/public/storage/archery.webp" width="180" height="180" class="rounded-circle img-fluid">
 
                             <h5>Archery</h5>
                         </div>
